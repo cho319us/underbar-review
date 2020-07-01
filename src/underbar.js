@@ -121,6 +121,9 @@
     } else {
       for(var i=0; i<array.length; i++){ // array = [1, 2, 2, 3, 4, 4]
         // if the element in the array returned by iterator() is not in booleanArr
+
+        // *NOTE* note from creepy brian creeping around - didn't you write your own indexOf? Trust your work!!
+
         if(booleanArr.indexOf(iterator(array[i])) === -1){ // booleanArr = []
           booleanArr.push(iterator(array[i])); // [t, f]
           result.push(array[i]);
